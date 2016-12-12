@@ -2,50 +2,57 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
 <title>Mi Portafolio Web</title>
 <link rel="icon" href="images/favicon.ico" type=			"image/x-icon"/>
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<header id="yo">
-  <nav>
-    <ul>
-      <li><a href="#yo">Yo</a> </li>
-      <li><a href="#perfil">Perfil</a></li>
-      <li><a href="#trabajos">Trabajos</a></li>
-      <li><a href="#contacto">Contactame</a></li>
+<header id="yo" class="Header">
+  <nav class="MainMenu">
+    <ul class="MainMenu-list">
+      <li class="MainMenu-item"><a class="MainMenu-link" href="#yo">Yo</a> </li>
+      <li class="MainMenu-item"><a class="MainMenu-link" href="#perfil">Perfil</a></li>
+      <li class="MainMenu-item"><a class="MainMenu-link" href="#trabajos">Trabajos</a></li>
+      <li class="MainMenu-item"><a class="MainMenu-link" href="#contacto">Contactame</a></li>
     </ul>
   </nav>
-  <figure><img src="images/avatar2.jpg" alt="jesus"/></figure>
-  <figcaption> <a href="https://www.facebook.com/JesusAntoonio" target="_black">JChavez </a></figcaption>
-  <p> Jesús Antonio </p>
+  <figure class="Header-imageContainer"><img class="Header-image" src="images/avatar2.jpg" alt="jesus"/></figure>
+  <figcaption class="Header-description"> <a class="Header-link" href="https://www.facebook.com/JesusAntoonio" target="_black">JChavez </a></figcaption>
+  <p class="Header-name"> Jesús Antonio </p>
 </header>
-<section id="perfil">
-  <h2> Perfil </h2>
-  <p>Hola, este es mi portafolio web, para cualquier cosa favor de contactarme. </p>
-  <a href="https://www.facebook.com/JesusAntoonio" target="_black">JesúsAntonio</a> <a href="https://www.instagram.com/jesus_adchavez/" target="_black">jesus_adchavez</a> <a href="https://github.com/chavez12" target="_black">chavez12</a> </section>
-<section id="trabajos">
-  <h2>Trabajos</h2>
-  <article>
-    <figure><img src="images/proyecto.jpg" alt="descripcion">
-      <figcaption>Mi proyecto 1</figcaption>
+<section id="perfil" class="Profile">
+  <h2 class="Profile-title u-title"> Perfil </h2>
+  <p class="Profile-description">Hola, este es mi portafolio web, para cualquier cosa favor de contactarme. </p>
+  <a class="Profile-link" href="https://www.facebook.com/JesusAntoonio" target="_black">JesúsAntonio</a> <a class="Profile-link" href="https://www.instagram.com/jesus_adchavez/" target="_black">jesus_adchavez</a> <a class="Profile-link" href="https://github.com/chavez12" target="_black">chavez12</a> </section>
+<section id="trabajos" class="Work">
+  <h2 class="Work-title u-title">Trabajos</h2>
+  <article class="Work-item">
+    <figure class="Work-imageContainer"><img class="Work-image" src="images/proyecto.jpg" alt="descripcion">
+      <figcaption class="Work-description">Mi proyecto 1</figcaption>
     </figure>
-    <figure><img src="images/thumb2.jpg" alt="descripcion">
-      <figcaption>Mi proyecto 2</figcaption>
+  </article>
+  <article class="Work-item">
+    <figure class="Work-imageContainer"><img class="Work-image" src="images/thumb2.jpg" alt="descripcion">
+      <figcaption class="Work-description">Mi proyecto 2</figcaption>
     </figure>
-    <figure><img src="images/thumb3.jpg" alt="descripcion">
-      <figcaption>Mi proyecto 3</figcaption>
+  </article>
+  <article class="Work-item">
+    <figure class="Work-imageContainer"><img class="Work-image" src="images/thumb3.jpg" alt="descripcion">
+      <figcaption class="Work-description">Mi proyecto 3</figcaption>
     </figure>
   </article>
 </section>
-<footer id="contacto">
-  <div>
-    <h3>Contactame</h3>
-    <p>Si tienes alguna sugerencia o quieres trabajar conmigo, por favor escribeme a este correo <a href="mailto:antonio_dc_12@hotmail.com"> antonio_dc_12@hotmail.com.</a></p>
+<footer id="contacto" class="Footer">
+  <div class="Footer-left">
+    <h3 class="Footer-title">Contactame</h3>
+    <p>Si tienes alguna sugerencia o quieres trabajar conmigo,<br>
+      por favor escribeme a este correo <a href="mailto:antonio_dc_12@hotmail.com"> antonio_dc_12@hotmail.com.</a>
+      </p>
   </div>
-  <div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14487.759880788615!2d-107.406838!3d24.797509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff86af6e0a38175d!2sItesus+Culiacan!5e0!3m2!1ses-419!2smx!4v1481438565468" width="600" height="450" frameborder="0" style="border:0" allowfullscreen> </iframe>
+  <div class="Footer-right">
+    <iframe class="Footer-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14487.759880788615!2d-107.406838!3d24.797509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff86af6e0a38175d!2sItesus+Culiacan!5e0!3m2!1ses-419!2smx!4v1481438565468" width="300" height="200" frameborder="0" style="border: 0;"> </iframe>
   </div>
 </footer>
 </body>
